@@ -19,3 +19,6 @@ This project creates a blockchain ledger that a records transactinos between two
 ## The Ledger
 The ledger records all the transactions. This project includes ten transactions. Validating the blocks allow certainty of movement between two parties. 
 
+<img width="665" alt="Screenshot 2024-04-24 at 9 45 52 PM" src="https://github.com/gerxxoo/PyChain_Ledger/assets/151468004/52666a65-80d0-433f-a028-0f652a685ca8">
+
+<img width="666" alt="Screenshot 2024-04-24 at 9 46 20 PM" src="https://github.com/gerxxoo/PyChain_Ledger/assets/151468004/d526eb46-c034-486b-bfcf-f486069f3ccf">
