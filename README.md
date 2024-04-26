@@ -16,6 +16,46 @@ You’ll make the following updates to the provided Python file for this assignm
 
 This project creates a blockchain ledger that a records transactinos between two users (`Sender` and `Receiver`). An important function of this system is the ability to verify said transactions. 
 
+# Instructions
+
+## Step 1: Create a Record Data Class
+1. Define a new class named `Record`.
+
+2. Add the `@dataclass` decorator immediately before the `Record` class definition.
+
+3. Add an attribute named `sender` of type `str`.
+
+4. Add an attribute named `receiver` of type `str`.
+
+5. Add an attribute named `amount` of type `float`.
+
+## Step 2: Modify the Existing Block Data Class to Store Record Data
+1. In the `Block` class, rename the `data` attribute to `record`.
+
+2. Set the data type of the `record` attribute to `Record`.
+
+## Step 3: Add Relevant User Inputs to the Streamlit Interface
+1. Delete the `input_data` variable from the Streamlit interface.
+
+2. Add an input area where you can get a value for `sender` from the user.
+
+3. Add an input area where you can get a value for `receiver` from the user.
+
+4. Add an input area where you can get a value for `amount` from the user.
+
+5. As part of the Add Block button functionality, update `new_block` so that `Block` consists of an attribute named `record`, which is set equal to a `Record` that contains the `sender`, `receiver`, and `amount` values. The updated `Block` should also include the attributes for `creator_id` and `prev_hash`.
+
+## Step 4: Test the PyChain Ledger by Storing Records
+1. In the terminal, navigate to the project folder where you've coded the Challenge.
+
+2. In the terminal, run the Streamlit application by using `streamlit run pychain.py`.
+
+3. Enter values for the sender, receiver, and amount, and then click the Add Block button. Do this several times to store several blocks in the ledger.
+
+4. Verify the block contents and hashes in the Streamlit drop-down menu. Take a screenshot of the Streamlit application page, which should detail a blockchain that consists of multiple blocks. Include the screenshot in the `README.md` file for your Challenge repository.
+
+5. Test the blockchain validation process by using the web interface. Take a screenshot of the Streamlit application page, which should indicate the validity of the blockchain. Include the screenshot in the `README.md` file for your Challenge repository.
+
 ## The Ledger
 The ledger records all the transactions. This project includes ten transactions. Validating the blocks allow certainty of movement between two parties. 
 
